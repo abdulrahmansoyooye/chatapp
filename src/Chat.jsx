@@ -118,6 +118,8 @@ const Chat = ({ socket, username, group }) => {
             </Box>
           ) : null}
         </Box>
+
+        <ScrollToBottom className="contianer" />
         {/* Main Page */}
         <Box
           sx={{
@@ -182,6 +184,7 @@ const Chat = ({ socket, username, group }) => {
                 <SearchOutlined />
               </IconButton>
             </Box>
+
             <Box mb="8rem"></Box>
             {/* Chat */}
             {recievedMessage.map(({ message, author, time }) => {
@@ -306,29 +309,3 @@ const Chat = ({ socket, username, group }) => {
 };
 
 export default Chat;
-
-{
-  //   <Box>
-  //   <Box>
-  //     <Typography>Message</Typography>
-  //     {/* {recievedMessage.map(({ message, author, time, group }, index) => (
-  //       <Box key={index}>
-  //         {message}
-  //         {author}
-  //         {time}
-  //         {group}
-  //       </Box>
-  //     ))} */}
-  //   </Box>
-  // </Box>
-  // <Box>
-  //   <TextField
-  //     placeholder="Message"
-  //     value={message}
-  //     onChange={(e) => setMessage(e.target.value)}
-  //   />
-  //   <Button variant="contained" onClick={sendMessage}>
-  //     &#9658;
-  //   </Button>
-  // </Box>
-}

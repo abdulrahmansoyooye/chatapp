@@ -19,6 +19,9 @@ body,
   background-color: #ccc;
   border-radius: 5px;
 }
-.MuiTextField-root {
-  color: #fff;
+.contianer {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
