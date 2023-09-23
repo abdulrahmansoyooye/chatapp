@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&family=Rubik:wght@400;500;700&display=swap");
+
+html,
+body,
+#root,
+.app {
+  font-family: "Rubik", sans-serif;
+  background-color: #f6f6f63f;
+  background-image: url("https://i.pinimg.com/564x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg");
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  width: 1px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.MuiTextField-root {
+  color: #fff;
+}
