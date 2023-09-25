@@ -76,15 +76,15 @@ const Chat = ({ socket, username, group }) => {
             backgroundColor: "rgba(255, 255, 255, 0.83)",
             position: "absolute",
             bottom: "0",
-            height: "90vh",
+            height: "89vh",
             zIndex: "10000",
             backdropFilter: "blur(2px) saturate(146%)",
             mt: "1rem",
           }}
         >
           <Divider />
-          <Typography variant="h3" textAlign="center" m="2rem">
-            Coming soon. I'm working on it
+          <Typography variant="h5" textAlign="center" m="2rem">
+            Coming soon.
           </Typography>
         </Box>
       )}
@@ -120,7 +120,7 @@ const Chat = ({ socket, username, group }) => {
               gap: "0.5rem",
               width: "100%",
               p: "1rem",
-              justifyContent: "space-around",
+              justifyContent: mobileScreens ? "space-around" : "space-evenly",
               position: "fixed",
               top: "0",
               right: "0",
@@ -205,7 +205,7 @@ const Chat = ({ socket, username, group }) => {
             >
               <Divider />
 
-              <Typography variant="h3" textAlign="center" m="2rem">
+              <Typography variant="h4" textAlign="center" m="2rem">
                 Coming soon. I'm working on it
               </Typography>
             </Box>
@@ -304,9 +304,7 @@ const Chat = ({ socket, username, group }) => {
                       {time}
                     </Typography>
                     {author === username && (
-                      <IconButton>
-                        <DoneAllOutlined style={{ fontSize: 15 }} />
-                      </IconButton>
+                      <DoneAllOutlined style={{ fontSize: 15 }} />
                     )}
                   </Box>
                 </Box>
