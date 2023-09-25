@@ -182,7 +182,7 @@ const Chat = ({ socket, username, group }) => {
                   >
                     {recievedUser.length === 0
                       ? null
-                      : recievedUser.length + " users joined after you"}
+                      : recievedUser.length + "online"}
                   </Typography>
                 </Box>
               </Box>
