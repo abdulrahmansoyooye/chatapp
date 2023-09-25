@@ -131,7 +131,7 @@ const Chat = ({ socket, username, group }) => {
               sx={{
                 display: "flex",
                 width: "90%",
-                gap: "3rem",
+                gap: "2rem",
               }}
             >
               <IconButton
