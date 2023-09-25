@@ -163,7 +163,7 @@ const Chat = ({ socket, username, group }) => {
                 <Box
                   sx={{
                     display: "flex",
-                    width: "90%",
+                    width: "100%",
                     flexDirection: "column",
                   }}
                 >
@@ -182,7 +182,7 @@ const Chat = ({ socket, username, group }) => {
                   >
                     {recievedUser.length === 0
                       ? null
-                      : recievedUser.length + "online"}
+                      : recievedUser.length + " online"}
                   </Typography>
                 </Box>
               </Box>
