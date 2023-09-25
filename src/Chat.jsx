@@ -180,7 +180,9 @@ const Chat = ({ socket, username, group }) => {
                       fontSize: "15px",
                     }}
                   >
-                    {recievedUser.length} joined after you
+                    {recievedUser.length === 0
+                      ? null
+                      : recievedUser.length + " users joined after you"}
                   </Typography>
                 </Box>
               </Box>
