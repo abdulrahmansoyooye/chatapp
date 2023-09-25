@@ -17,13 +17,13 @@ const Start = ({ socket }) => {
   const [username, setUsername] = useState("");
   const [group, setGroup] = useState("");
   const [showChat, setShowChat] = useState(false);
-
+  const [logoShow, setLogoShow] = useState(false);
   const theme = useTheme();
   const mobileScreens = useMediaQuery("(max-width:800px)");
 
   const joinGroup = () => {
     if (username !== "" && group !== "") {
-      socket.emit("join_group", group);
+      socket.emit("join_group", { username, group });
       setShowChat(true);
     }
   };
@@ -36,8 +36,8 @@ const Start = ({ socket }) => {
             padding: "2rem",
 
             borderRadius: "1rem",
-            width: mobileScreens ? "90%" : "70%",
-            border: `5px solid ${theme.palette.background.alt}`,
+            width: mobileScreens ? "90%" : "60%",
+            border: `5px solid ${theme.palette.primary.main}`,
           }}
         >
           <Box
