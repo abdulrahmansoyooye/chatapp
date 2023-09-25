@@ -180,7 +180,7 @@ const Chat = ({ socket, username, group }) => {
                       fontSize: "15px",
                     }}
                   >
-                    {recievedUser.length} online
+                    {recievedUser.length} joined after you
                   </Typography>
                 </Box>
               </Box>
@@ -206,7 +206,7 @@ const Chat = ({ socket, username, group }) => {
               <Divider />
 
               <Typography variant="h4" textAlign="center" m="2rem">
-                Coming soon. I'm working on it
+                Coming soon
               </Typography>
             </Box>
           )}

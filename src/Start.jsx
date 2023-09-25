@@ -33,7 +33,7 @@ const Start = ({ socket }) => {
         <Box
           sx={{
             margin: "6rem auto",
-            padding: "2rem",
+            padding: "1rem",
 
             borderRadius: "1rem",
             width: mobileScreens ? "90%" : "60%",
