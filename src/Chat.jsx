@@ -291,6 +291,7 @@ const Chat = ({ socket, username, group }) => {
                       display: "flex",
                       justifyContent: "flex-end",
                       alignItems: "center",
+                      gap: "0.5rem",
                     }}
                   >
                     <Typography
